@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexandru's world</title>
+    <link
+      rel="shortcut icon"
+      href="images/Favicon.ico.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Azeret+Mono:wght@500&family=El+Messiri&family=Gabriela&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Anton&family=Azeret+Mono:wght@500&family=El+Messiri&family=Gabriela&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Anton&family=Azeret+Mono:wght@500&family=El+Messiri&family=Gabriela&family=Gloock&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="all">
+          <div class="logo-search">
+            <img class="blacklogo" src="images/blacklogo.png" alt="Logo" />
+            <input class="searchbar" type="text" placeholder="Search" />
+          </div>
+          <div class="theme">
+            <ul class="navbar">
+              <a href="index.html"><li>Home</li></a>
+              <a href="#pf"> <li>Portfolio</li></a>
+              <a href="Contact.html"><li>Contact</li></a>
+              <a href="#about"> <li>About</li></a>
+            </ul>
+            <img id="darktheme" src="images/moon.png" alt="darktheme" />
+          </div>
+        </div>
+        <div class="first-text">
+          <h1>Alexandru's world</h1>
+          <h3>My name is A.A. Popa</h3>
+          <p>
+            a lover of Renaissance techniques. Explore the many facets of the
+            passion through my sketches, paintings, and creations.
+          </p>
+          <div class="socialmedia">
+            <a href="https://youtube.com/@akaAl3xdotcom?si=twekyH7Np7_aoYkO"
+              ><img src="images/icon-youtube.svg" alt="youtube"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/alexandru-popa-1162a82a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              ><img src="images/icon-linkedin.svg" alt="linkedin"
+            /></a>
+            <a href="https://www.tiktok.com/@a.a.popa?_t=8hR8xojDmpV&_r=1"
+              ><img src="images/icon-tiktok.svg" alt="tiktok"
+            /></a>
+            <a href="https://x.com/alexand63835835?s=21"
+              ><img src="images/X-icon.png" alt="x"
+            /></a>
+          </div>
+        </div>
+        <div class="wave wave1"></div>
+      </section>
+      <div class="about">
+        <h1 id="about">
+          <div class="div" data-aos="fade-up">
+            Alexandru Popa is a Romanian <br />artist dedicated to the
+            renaissance
+            <br />
+            and modern interpretation of <br />traditional fine art techniques.
+          </div>
+        </h1>
+      </div>
+      <div class="portfolio">
+        <div class="div" data-aos="fade-right" duration="1000" ;>
+          <h2 id="pf">Some Examples :-</h2>
+        </div>
+        <div class="example-grid">
+          <div class="div" data-aos="fade-up">
+            <img
+              src="images/63E25585-45BB-44CE-AE68-F04E64275593.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="div" data-aos="fade-up">
+            <img
+              src="images/a020b8d7-a9f9-4dbc-a20b-9111624dd138.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="div" data-aos="fade-up">
+            <img
+              src="images/E9FDA94A-DCF7-42FA-8380-7D21732F1FAD.jpg"
+              alt="image"
+            />
+          </div>
+        </div>
+        <div class="div" data-aos="fade-right">
+          <h3>
+            For more Examples and better Art , watch us on Our Social media.
+          </h3>
+        </div>
+      </div>
+      <footer>
+        <img src="images/goldenlogo.png" alt="logo" />
+        <p>Copyright © 2023. All rights reserved.</p>
+        <img src="images/IMG_7892.png" alt="" />
+      </footer>
+    </main>
+    <script>
+      const icon = document.getElementById("darktheme");
+      icon.onclick = function () {
+        document.body.classList.toggle("darktheme");
+        if (document.body.classList.contains("darktheme")) {
+          icon.src = "images/sun.png";
+        } else {
+          icon.src = "images/moon.png";
+        }
+      };
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        /*in here u can change all of scrolls*/ duration: 2200,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
